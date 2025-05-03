@@ -30,10 +30,14 @@ test:
   requires:
     - python {{ python_min }}
     - pip
+    - pytest
   imports:
     - infomeasure
+  source_files:
+    - tests
   commands:
     - pip check
+    - pytest tests
 
 about:
   summary: Comprehensive collection of information measures.
