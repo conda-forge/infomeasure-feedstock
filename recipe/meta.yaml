@@ -1,5 +1,5 @@
 {% set name = "infomeasure" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/infomeasure-{{ version }}.tar.gz
-  sha256: 7c52b0743b87cd26ce184e05e96ad80d2cd18ec3418f4be020e6b0f87c5adf3a
+  sha256: f88ba7e26e275dbd095d48c41748d40254c6b2ecf1cd3d8d372ed5730442cfe7
 
 build:
   noarch: python
@@ -22,9 +22,9 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
-    - scipy
-    - sparse >0.10.0
+    - numpy >=1.22,<2.4.3
+    - scipy >=1.0.0,<1.17.1
+    - sparse >0.10.0,<0.17.1
 
 test:
   requires:
