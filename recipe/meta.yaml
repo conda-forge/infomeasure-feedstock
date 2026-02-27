@@ -22,9 +22,9 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
-    - scipy
-    - sparse >0.10.0
+    - numpy >=1.22,<2.4.3
+    - scipy >=1.0.0,<1.17.1
+    - sparse >0.10.0,<0.17.1
 
 test:
   requires:
