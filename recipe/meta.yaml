@@ -1,5 +1,5 @@
 {% set name = "infomeasure" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/infomeasure-{{ version }}.tar.gz
-  sha256: 63110658d2a41817d9a499401e9c39a4137855535f3b91f11db56053529e19fa
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/infomeasure-{{ version }}.tar.gz
+  sha256: 2bbdfad86e23f91af788ee36f13d94b6de85c5105266a21247c87e91a96f64ea
 
 build:
   noarch: python
